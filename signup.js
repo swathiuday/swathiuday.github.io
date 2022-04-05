@@ -16,7 +16,7 @@ email.addEventListener('textInput', email_Verify);
 password.addEventListener('textInput', pass_Verify);
 //confirmpassword.addEventListener('textInput', confirmpass_Verify);
 
-
+form.onsubmit=(validated() && passvalid());
 
 function validated(){
 	var pattern=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
